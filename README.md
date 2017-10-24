@@ -1,8 +1,11 @@
 # Assignment 4
 
-This is a continuation of [Assignment 3](https://github.com/jungkumseok/cpen400a-fall2017-assignment3). As a part of this assignment, you will focus on interacting with the remote server (https://cpen400a-bookstore.herokuapp.com/products)
-to fetch the product items. You will need to build on your previous code - no code will be provided by us for this assignment. 
+This is a continuation of [Assignment 3](https://github.com/jungkumseok/cpen400a-fall2017-assignment3). As a part of this assignment, you will focus on interacting with the remote server (https://cpen400a-bookstore.herokuapp.com/products) to fetch the product items. You will need to build on your previous code - no code will be provided by us for this assignment.
 
+The following URLs are available on the server:
+
+* `https://cpen400a-bookstore.herokuapp.com/products` - object containing all the products
+* `https://cpen400a-bookstore.herokuapp.com/products/${productName}` - returns a single product identified by `productName` 
 
 ## Tasks
 
@@ -34,9 +37,13 @@ ajaxGet("https://cpen400a-bookstore.herokuapp.com/products",
 Note that you don't have to pass in the callback functions in the raw format shown above - you can also declare a "initialize" function somewhere and pass the reference to it. We leave that up to you.
 If you want, you can modify the `Product` object from assignment-3 to include `"quantity"` as a property and use it. But you are not required to use this object, if you wish not to. 
 
-3. **Handle Timeout / Error:** (3 points)  The remote server you are fetching the data from is not very reliable. Sometimes, instead of returning the product list the server takes a long time, which causes the AJAX request to time out. Also, sometimes the server returns error 500 instead of the product list. In either case, you will need to make repeated AJAX calls until you get the list of products from the web server (you can give up after a reasonable number of such repeated tries).
+3. **Handle Timeout / Error:** (3 points) The remote server you are fetching the data from is not very reliable. Sometimes, instead of returning the product list the server takes a long time, which causes the AJAX request to time out. Also, sometimes the server returns error 500 instead of the product list. In either case, you will need to make repeated AJAX calls until you get the list of products from the web server (you can give up after a reasonable number of such repeated tries).
 
-4. **Synchronize the price / quantity before checkout:** (5 points) In your show cart modal you need to present the user with a checkout button. When the user clicks on checkout, you will need to make sure that the products are still available in the back store and the prices are updated. You will do that by making another AJAX call to the same url. Therefore, when the user clicks on checkout, you will alert the user with the message showing that you are confirming the final total price as well as the availability. If there is any price change, you will need to alert the user for each product for which the price changed. For any of the selected products, if the quantity that the user ordered is not available any more, you will change the number of products in the cart to the now available quantity. You will also need to alert the user about the updated quantity as well. The cart variable should also be updated to reflect the revised prices/quantity.
+4. **Synchronize the price / quantity before checkout:** (5 points) In your show cart modal you need to present the user with a checkout button.
+    * A) When the user clicks on checkout, you will need to make sure that the products are still available in the back store and the prices are updated. You will do that by making another AJAX call to the same url. Therefore, when the user clicks on checkout, you will alert the user with the message showing that you are confirming the final total price as well as the availability.
+    * B) If there is any price change, you will need to alert the user for each product for which the price changed.
+    * C) For any of the selected products, if the quantity that the user ordered is not available any more, you will change the number of products in the cart to the now available quantity. You will also need to alert the user about the updated quantity as well.
+    * D) The cart variable should also be updated to reflect the revised prices/quantity.
 
 5. **Update Cart modal and show total price:** (2 points) Once you have the updated cart information (from task 4), you will need to update the cart information shown to the user. Also, you will alert the user with the total amount due (based on the cart's contents).
 
