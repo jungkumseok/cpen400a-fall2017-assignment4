@@ -42,7 +42,7 @@ If you want, you can modify the `Product` object from assignment-3 to include `"
 
 
 ## Bonus Task
-(1 point) The code for the server used for the server side application, is made available at https://github.com/erkartik91/cpen400. The instructions to run the server locally are available in the README file.
+(1 point) The code for the server used for the server side application, is made available at https://github.com/jungkumseok/cpen400a-fall2017-server. The instructions to run the server locally are available in the README file.
 You need to have the server up and running in your local machine as well as you will need to host the same application on Heroku servers. You can create a free account to deploy this application. The task is only considered complete, if you have it setup on your local machine as well as on Heroku. The instructions to run on local machine are provided in the read me file. For deploying to Heroku, please follow the instructions given on their website. **Please include a link to your heroku deployment in your README file.**
 
 
