@@ -22,7 +22,7 @@ ajaxGet("https://cpen400a-bookstore.herokuapp.com/products",
 ```
 To help you get started, here is [some reference to the XMLHttpRequest API](https://www.w3schools.com/xml/xml_http.asp)
 
-2. **Fetch products from server using the `ajaxGet` from task 1:** (2 points) You will initialize your `products` variable by making an AJAX call to the following url. The `cart` variable should follow the same structure as the previous assignments - you should not make any changes to it. When calculating the total price of the products in the cart, use the price information from the products object as in the previous assignments.
+2. **Fetch products from server to initialize the `products` variable:** (2 points) You will initialize your `products` variable by making an AJAX call to the following url. The `cart` variable should follow the same structure as the previous assignments - you should not make any changes to it. When calculating the total price of the products in the cart, use the price information from the products object as in the previous assignments. You can use the function from task 1 to make the AJAX request.
 For example:
 ```
 ajaxGet("https://cpen400a-bookstore.herokuapp.com/products",
