@@ -60,6 +60,16 @@ You need to have the server up and running in your local machine as well as you 
 (3 points) You should ensure that your JavaScript code follows the best practices around variable/function naming, variable placement, modularization (dividing long code blocks into smaller functions) and comments (your comments should explain why a design choice was taken, instead of how your code works). You still need to consider creating DOM elements programmatically (from Assignment 2 onwards) rather than hard-coding them in your HTML if you did not in your previous assignments. Additionally, HTML DOM elements should not be hard-coded as strings in JavaScript either. Your code will be assessed for code quality during marking.
 
 
+## Testing
+**To test your code, insert the following script tags within the head tag of your page**
+```
+<script src="http://ece.ubc.ca/~kbajaj/cpen400a/jquery.js" type="text/javascript"></script>
+<script src="http://ece.ubc.ca/~kumseok/src/cpen400a/test4.js" type="text/javascript"></script>
+```
+You will see a Red button on the top-right corner of your web page. Clicking on that will let you test your code.
+Watch out for the alert messages which tells you any missing components/functionalities. You are responsible for ensuring that all the functionalities above are implemented correctly - the tests are only there to help you. We reserve the right to test your code with other test cases than the above.
+
+
 ## Submission instructions:
 
 * Create a branch called `assignment-4`.
